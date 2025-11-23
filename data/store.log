@@ -1,2 +1,2 @@
 {"Set":{"key":"user","val":"Aswin"}}
-{"Remove":{"key":"user"}}
+{"Set":{"key":"name","val":"John Doe"}}

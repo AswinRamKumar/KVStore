@@ -11,5 +11,15 @@ pub enum KvError {
 
     #[error("Key not found")]
     KeyNotFound,
+
+    #[error("Invalid key: {0}")]
+    InvalidKey(String),
+
+    #[error("Log corruption detected at offset {0}")]
+    LogCorruption(u64),
+
+    #[error("Compaction failed: {0}")]
+    CompactionFailed(String),
 }
+
 pub type Result<T> = std::result::Result<T, KvError>;
